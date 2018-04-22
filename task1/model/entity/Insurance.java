@@ -3,6 +3,7 @@ package by.epam.task1.model.entity;
 import java.util.Objects;
 
 public class Insurance implements Comparable{
+    //сделай поля private
     int riskLevel;
     int cost;
     String insuranceSphere;
@@ -52,7 +53,9 @@ public class Insurance implements Comparable{
                 cost == insurance.cost &&
                 Objects.equals(insuranceSphere, insurance.insuranceSphere);
     }
-
+    
+    //здесь вместо слова Insurance лучше использовать что-то типа getClass().getName()
+    //так при изменении класса не придется переписывать метод toString
     @Override
     public String toString() {
         return "Insurance. Sphere: " + insuranceSphere + ", risk level:" + riskLevel + ", cost:" + cost;
