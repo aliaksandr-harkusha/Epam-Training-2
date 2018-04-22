@@ -6,7 +6,9 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
-
+//это по сути должен быть класс модели
+//т.е. он должен содердать только твои 2 поля и get/set методы для них (можно оставить также add и getSize для коллекции)
+//для остальных методов создай какой-либо DerivativeService класс - и перенеси их туда
 public class Derivative {
 
     private String derivativeTitle;
@@ -31,6 +33,7 @@ public class Derivative {
         Collections.sort(insuranceList);
     }
 
+    //зачем 2 таких метода?
     public void sortInsurances(Comparator comparator) {
         Collections.sort(insuranceList, comparator);
     }
