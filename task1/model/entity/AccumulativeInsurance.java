@@ -11,6 +11,7 @@ public class AccumulativeInsurance extends Insurance {
         this.yearsPassed = yearsPassed;
     }
 
+    //обычно toString - следует в конце класса
     @Override
     public String toString() {
         return "Accumulative insurance. Sphere: " + insuranceSphere + ", risk level:"
