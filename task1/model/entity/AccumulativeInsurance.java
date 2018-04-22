@@ -35,6 +35,8 @@ public class AccumulativeInsurance extends Insurance {
         return calcExtraMoney();
     }
 
+    //попробуй перенести этот метод куда-либо в serice пакет
+    //обычно классы модели никакой вычислительной логики не содержат
     private int calcExtraMoney() {
         double formerCost = cost;
         double multiplier = 1 + yearsPassed / 100.;
