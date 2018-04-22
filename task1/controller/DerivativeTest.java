@@ -19,6 +19,7 @@ public class DerivativeTest {
         View.print(derivative.toString());
         derivative.addInsurance(new AccumulativeInsurance(1250, "business", 3, 5));
 
+        //вместо знака "-" лучше перепиши реализацию метода compare (поменяй местами 1 и -1)
         derivative.sortInsurances(new Comparator<Insurance>() {
             @Override
             public int compare(Insurance o1, Insurance o2) {
