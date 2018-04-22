@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+//почему это enum?
+//переделай в обычный класс
 public enum DerivativeMaker {
     DERIVATIVE_MAKER;
 
